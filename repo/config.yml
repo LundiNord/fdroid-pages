@@ -35,7 +35,7 @@
 # mvn3: mvn
 
 # Command or path to binary for running Gradle
-# Defaults to using an internal gradle wrapper (gradlew-fdroid).
+# Defaults to using an internal Gradle wrapper (gradlew-fdroid).
 # gradle: gradle
 
 # Always scan the APKs produced by `fdroid build` for known non-free classes
@@ -45,12 +45,12 @@
 # this repo. Setting it to 0 or not setting it at all disables this
 # functionality. If you do set this to a non-zero value, you need to ensure
 # that your index is updated much more frequently than the specified interval.
-# The same policy is applied to the archive repo, if there is one.
+# The same policy is applied to the archive repo if there is one.
 # repo_maxage: 0
 
-# Canonical URL of the repositoy, needs to end in /repo. Is is used to identity
-# the repo in the client, as well.
-repo_url: https://https://fdroid.nyxnord.de/fdroid/repo/
+# Canonical URL of the repository needs to end in /repo.
+# It is used to identify the repo in the client, as well.
+repo_url: https://https://fdroid.nyxnord.de/fdroid/repo
 #
 # Base URL for per-package pages on the website of this repo,
 # i.e. https://f-droid.org/packages/<appid>/ This should be accessible
