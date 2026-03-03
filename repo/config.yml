@@ -50,7 +50,7 @@
 
 # Canonical URL of the repository needs to end in /repo.
 # It is used to identify the repo in the client, as well.
-repo_url: https://https://fdroid.nyxnord.de/fdroid/repo
+repo_url: https://fdroid.nyxnord.de/fdroid/repo
 #
 # Base URL for per-package pages on the website of this repo,
 # i.e. https://f-droid.org/packages/<appid>/ This should be accessible
