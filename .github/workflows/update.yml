@@ -186,6 +186,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./deploy
           force_orphan: true
+          cname: fdroid.nyxnord.de
       
       - name: PostProcess
         id: postprocess
@@ -200,17 +201,3 @@ jobs:
           git commit -m "Update versions" && git push || true
 
           echo "executed_update=true" >> "$GITHUB_OUTPUT"
-
-  mirror:
-    runs-on: ubuntu-latest
-    needs: update
-    if: needs.update.outputs.executed_update == 'true'
-    steps:
-      - run: |
-          git clone --bare https://github.com/litetex/fdroid-pages.git --single-branch --branch gh-pages
-          cd fdroid-pages.git
-          echo "Renaming branch"
-          git branch -m gh-pages pages
-          echo "Starting push"
-          git push --mirror https://litetex:${{ secrets.CB_TOKEN }}@codeberg.org/litetex/fdroid-pages.git
-          echo "Done"
