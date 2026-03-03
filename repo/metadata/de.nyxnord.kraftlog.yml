@@ -1,8 +1,7 @@
-# See also: https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/org.schabi.newpipe.yml
-AntiFeatures:
 Categories:
-  - Sports&Health
-License: no license
+  - Sports & Health
+  - Workout
+License: LicenseRef-proprietary
 AuthorName: NyxNord
 AuthorEmail: contact@nyxnord.de
 SourceCode: https://github.com/LundiNord/KraftLog
