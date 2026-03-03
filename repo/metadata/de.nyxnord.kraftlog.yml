@@ -1,0 +1,18 @@
+# See also: https://gitlab.com/fdroid/fdroiddata/-/blob/master/metadata/org.schabi.newpipe.yml
+AntiFeatures:
+Categories:
+  - Sports&Health
+License: no license
+AuthorName: NyxNord
+AuthorEmail: contact@nyxnord.de
+SourceCode: https://github.com/LundiNord/KraftLog
+IssueTracker: https://github.com/LundiNord/KraftLog/issues
+Changelog: https://github.com/LundiNord/KraftLog/releases
+
+AutoName: KraftLog
+
+RepoType: git
+Repo: https://github.com/LundiNord/KraftLog.git
+
+Summary: A local-first Android workout tracking app built with Jetpack Compose and Material3.
+Description: KraftLog is a local-first Android workout tracking app built with Jetpack Compose and Material3. It allows you to track your workouts, create custom exercises and routines, and view your progress over time. KraftLog is designed to be simple and intuitive to use, while still providing powerful features for tracking your workouts.

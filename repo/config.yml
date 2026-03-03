@@ -50,7 +50,7 @@
 
 # Canonical URL of the repositoy, needs to end in /repo. Is is used to identity
 # the repo in the client, as well.
-repo_url: https://litetex.github.io/fdroid-pages/fdroid/repo
+repo_url: https://https://fdroid.nyxnord.de/fdroid/repo/
 #
 # Base URL for per-package pages on the website of this repo,
 # i.e. https://f-droid.org/packages/<appid>/ This should be accessible
@@ -58,10 +58,9 @@ repo_url: https://litetex.github.io/fdroid-pages/fdroid/repo
 # feature.
 # repo_web_base_url: http://localhost/packages/
 
-repo_name: litetex's Test Repo
+repo_name: NyxNord Android Appstore
 repo_description: >-
-  This is a F-Droid repository used for testing. 
-  Provided using a static site hosting service like GitHub Pages.
+  My personal F-Droid Android appstore.
 
 # As above, but for the archive repo.
 #
