@@ -120,6 +120,7 @@ jobs:
 
           echo "Downloading APKs"
           mkdir -p apks
+          rm -f /tmp/fdroid_download_errors
 
           for repo_info in ${repo_infos[@]}; do
             repo_info_parts=(${repo_info//;/ })
@@ -138,7 +139,7 @@ jobs:
                 -H "X-GitHub-Api-Version: 2022-11-28" \
                 https://api.github.com/repos/$repo/releases?per_page=3 \
                 | jq -r '.[].assets[].browser_download_url' \
-                | while read -r url; do wget -P apks --no-verbose $url; done
+                | while read -r url; do wget -P apks --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
 
               latest_release_data=$(
                 curl -L \
@@ -153,7 +154,7 @@ jobs:
               curl -L \
                 "https://gitlab.com/api/v4/projects/$encoded_repo/releases?per_page=3" \
                 | jq -r '.[].assets.links[].url' \
-                | while read -r url; do wget -P apks --no-verbose "$url"; done
+                | while read -r url; do wget -P apks --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
 
               latest_release_data=$(
                 curl -L \
@@ -173,8 +174,15 @@ jobs:
           echo "Deleting non-APK files"
           (cd apks && find . -type f ! -name '*.apk' -delete)
 
-          echo "Done"
           echo "do_update=true" >> "$GITHUB_ENV"
+
+          if [[ -f /tmp/fdroid_download_errors ]]; then
+            echo "::warning::Some APKs failed to download:"
+            cat /tmp/fdroid_download_errors
+            echo "download_errors=true" >> "$GITHUB_ENV"
+          fi
+
+          echo "Done"
           ls -lha apks
       
       - name: Load KeyStore file
@@ -248,3 +256,9 @@ jobs:
           git commit -m "Update versions" && git push || true
 
           echo "executed_update=true" >> "$GITHUB_OUTPUT"
+
+      - name: Fail on download errors
+        if: ${{ env.download_errors == 'true' }}
+        run: |
+          echo "::error::Some APKs failed to download. Check the Update step logs for details."
+          exit 1
