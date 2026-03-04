@@ -1,0 +1,16 @@
+Categories:
+  - Internet
+  - Security
+License: GPL-3.0-only
+AuthorName: Proton AG
+SourceCode: https://github.com/ProtonVPN/android-app
+IssueTracker: https://github.com/ProtonVPN/android-app/issues
+Changelog: https://github.com/ProtonVPN/android-app/releases
+
+AutoName: Proton VPN
+
+RepoType: git
+Repo: https://github.com/ProtonVPN/android-app.git
+
+Summary: Fast, secure VPN by Proton with a free tier.
+Description: Proton VPN is a privacy-focused VPN service from the makers of Proton Mail. It offers a strict no-logs policy, Swiss privacy laws, and a free tier with unlimited bandwidth. Features include Secure Core servers, NetShield ad blocker, and Stealth protocol to bypass VPN blocks.

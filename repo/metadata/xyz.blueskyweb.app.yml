@@ -1,0 +1,15 @@
+Categories:
+  - Internet
+License: MIT
+AuthorName: Bluesky Social PBC
+SourceCode: https://github.com/bluesky-social/social-app
+IssueTracker: https://github.com/bluesky-social/social-app/issues
+Changelog: https://github.com/bluesky-social/social-app/releases
+
+AutoName: Bluesky
+
+RepoType: git
+Repo: https://github.com/bluesky-social/social-app.git
+
+Summary: Decentralized social network built on the AT Protocol.
+Description: Bluesky is a decentralized social networking app built on the open AT Protocol. Enjoy a Twitter-like experience with algorithmic choice, custom feeds, and growing federation. Follow people across the network and take your identity with you.

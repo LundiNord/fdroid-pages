@@ -1,0 +1,15 @@
+Categories:
+  - Time
+License: GPL-3.0-only
+AuthorName: Proton AG
+SourceCode: https://github.com/ProtonMail/proton-calendar-android
+IssueTracker: https://github.com/ProtonMail/proton-calendar-android/issues
+Changelog: https://github.com/ProtonMail/proton-calendar-android/releases
+
+AutoName: Proton Calendar
+
+RepoType: git
+Repo: https://github.com/ProtonMail/proton-calendar-android.git
+
+Summary: End-to-end encrypted calendar by Proton.
+Description: Proton Calendar is an encrypted calendar app from the makers of Proton Mail. All event details including titles, descriptions, participants, and locations are end-to-end encrypted. Syncs across all your devices and integrates with your Proton account.

@@ -1,0 +1,15 @@
+Categories:
+  - System
+License: GPL-3.0-only
+AuthorName: Imran R
+SourceCode: https://github.com/ImranR98/Obtainium
+IssueTracker: https://github.com/ImranR98/Obtainium/issues
+Changelog: https://github.com/ImranR98/Obtainium/releases
+
+AutoName: Obtainium
+
+RepoType: git
+Repo: https://github.com/ImranR98/Obtainium.git
+
+Summary: Get Android app updates directly from the source.
+Description: Obtainium allows you to install and update apps directly from their release pages on GitHub, GitLab, F-Droid, and many other sources. Bypass app stores and get updates as soon as they are published. Supports automatic background updates and a wide range of app sources.

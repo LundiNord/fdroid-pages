@@ -1,0 +1,15 @@
+Categories:
+  - Time
+License: GPL-3.0-only
+AuthorName: Alex Baker
+SourceCode: https://github.com/tasks/tasks
+IssueTracker: https://github.com/tasks/tasks/issues
+Changelog: https://github.com/tasks/tasks/releases
+
+AutoName: Tasks
+
+RepoType: git
+Repo: https://github.com/tasks/tasks.git
+
+Summary: Open-source to-do lists and reminders.
+Description: Tasks is a fully open-source to-do app for Android. It supports Google Tasks, Microsoft To-Do, CalDAV/DAVx5 sync, local task lists, and rich features like subtasks, tags, geofencing reminders, and custom filters. No proprietary dependencies required.

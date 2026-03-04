@@ -1,0 +1,15 @@
+Categories:
+  - Internet
+License: MPL-2.0
+AuthorName: Mozilla Thunderbird
+SourceCode: https://github.com/thunderbird/thunderbird-android
+IssueTracker: https://github.com/thunderbird/thunderbird-android/issues
+Changelog: https://github.com/thunderbird/thunderbird-android/releases
+
+AutoName: Thunderbird
+
+RepoType: git
+Repo: https://github.com/thunderbird/thunderbird-android.git
+
+Summary: Open-source email client by Mozilla.
+Description: Thunderbird for Android (formerly K-9 Mail) is a powerful, open-source email client from Mozilla. Manage multiple email accounts, supports IMAP/POP3/SMTP, OpenPGP encryption via OpenKeychain, push notifications, and rich message composition. Clean, customizable interface for all your email needs.

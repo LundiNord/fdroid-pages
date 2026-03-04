@@ -1,0 +1,15 @@
+Categories:
+  - Security
+License: GPL-2.0-only
+AuthorName: Philipp Crocoll
+SourceCode: https://github.com/PhilippC/keepass2android
+IssueTracker: https://github.com/PhilippC/keepass2android/issues
+Changelog: https://github.com/PhilippC/keepass2android/releases
+
+AutoName: KeePass2Android
+
+RepoType: git
+Repo: https://github.com/PhilippC/keepass2android.git
+
+Summary: Password manager compatible with KeePass file format.
+Description: KeePass2Android is a password manager app compatible with KeePass (.kdbx) files. Manage your passwords offline or sync with your preferred cloud provider. Supports fingerprint unlock, QuickUnlock, and integrates with the Android autofill framework. Compatible with KeePass 1.x and 2.x databases.

@@ -1,0 +1,15 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: Proton AG
+SourceCode: https://github.com/ProtonMail/proton-mail-android
+IssueTracker: https://github.com/ProtonMail/proton-mail-android/issues
+Changelog: https://github.com/ProtonMail/proton-mail-android/releases
+
+AutoName: Proton Mail
+
+RepoType: git
+Repo: https://github.com/ProtonMail/proton-mail-android.git
+
+Summary: Encrypted email service by Proton.
+Description: Proton Mail is an end-to-end encrypted email service based in Switzerland. All emails are stored encrypted on Proton's servers and protected with zero-access encryption. Supports multiple accounts, custom domains, and full PGP compatibility. Free accounts available with optional paid upgrades.

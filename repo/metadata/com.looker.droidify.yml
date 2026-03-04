@@ -1,0 +1,14 @@
+Categories:
+  - System
+License: GPL-3.0-only
+SourceCode: https://github.com/Droid-ify/client
+IssueTracker: https://github.com/Droid-ify/client/issues
+Changelog: https://github.com/Droid-ify/client/releases
+
+AutoName: Droidify
+
+RepoType: git
+Repo: https://github.com/Droid-ify/client.git
+
+Summary: Material You F-Droid client.
+Description: Droidify is a sleek, modern F-Droid client with Material You design. Browse, install, and update apps from F-Droid and other compatible repositories. Features include batch updates, repository management, and a clean interface following the latest Material Design guidelines.

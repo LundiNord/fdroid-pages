@@ -1,0 +1,15 @@
+Categories:
+  - Internet
+License: Apache-2.0
+AuthorName: Element
+SourceCode: https://github.com/element-hq/element-android
+IssueTracker: https://github.com/element-hq/element-android/issues
+Changelog: https://github.com/element-hq/element-android/releases
+
+AutoName: Element
+
+RepoType: git
+Repo: https://github.com/element-hq/element-android.git
+
+Summary: Secure, decentralised communication via Matrix.
+Description: Element is a decentralized, end-to-end encrypted messaging app built on the open Matrix protocol. Chat, call, and collaborate across platforms and servers. Join any Matrix homeserver or self-host your own. Supports rooms, spaces, voice/video calls, and file sharing.

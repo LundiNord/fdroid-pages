@@ -1,0 +1,16 @@
+Categories:
+  - Internet
+  - Security
+License: GPL-3.0-only
+AuthorName: RethinkDNS
+SourceCode: https://github.com/celzero/rethink-app
+IssueTracker: https://github.com/celzero/rethink-app/issues
+Changelog: https://github.com/celzero/rethink-app/releases
+
+AutoName: Rethink DNS + Firewall
+
+RepoType: git
+Repo: https://github.com/celzero/rethink-app.git
+
+Summary: DNS-over-HTTPS, firewall, and network monitor.
+Description: RethinkDNS + Firewall is an open-source Android app that combines DNS-over-HTTPS, a per-app firewall, and a network monitor. Block ads and trackers, control which apps can access the internet, route traffic through Tor or Orbot, and analyze your network traffic in real time. No root required.

@@ -1,0 +1,14 @@
+Categories:
+  - Food & Drink
+License: MIT
+SourceCode: https://github.com/kronos-et-al/MensaApp
+IssueTracker: https://github.com/kronos-et-al/MensaApp/issues
+Changelog: https://github.com/kronos-et-al/MensaApp/releases
+
+AutoName: Mensa KA
+
+RepoType: git
+Repo: https://github.com/kronos-et-al/MensaApp.git
+
+Summary: Meal plans for Studierendenwerk Karlsruhe canteens.
+Description: Mensa KA is an app to browse meal plans from university canteens at the Studierendenwerk Karlsruhe. View and add photos of meals, rate dishes to help other students decide, and filter by dietary preferences and allergens. Built with Flutter, backed by a Rust/GraphQL API.

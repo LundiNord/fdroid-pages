@@ -1,0 +1,17 @@
+Categories:
+  - Internet
+  - Automation
+License: Apache-2.0
+AuthorName: Home Assistant
+AuthorEmail: hello@home-assistant.io
+SourceCode: https://github.com/home-assistant/android
+IssueTracker: https://github.com/home-assistant/android/issues
+Changelog: https://github.com/home-assistant/android/releases
+
+AutoName: Home Assistant
+
+RepoType: git
+Repo: https://github.com/home-assistant/android.git
+
+Summary: Open-source home automation platform companion app.
+Description: The Home Assistant Companion App for Android turns your device into a smart home command center. Control and monitor all your smart home devices, get location-based automations, receive notifications from your Home Assistant instance, and access your dashboards from anywhere.

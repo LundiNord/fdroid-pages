@@ -1,0 +1,15 @@
+Categories:
+  - Writing
+License: LicenseRef-proprietary
+AuthorName: FUTO
+SourceCode: https://github.com/futo-org/android-keyboard
+IssueTracker: https://github.com/futo-org/android-keyboard/issues
+Changelog: https://github.com/futo-org/android-keyboard/releases
+
+AutoName: FUTO Keyboard
+
+RepoType: git
+Repo: https://github.com/futo-org/android-keyboard.git
+
+Summary: Privacy-respecting keyboard with on-device voice input.
+Description: FUTO Keyboard is a privacy-focused Android keyboard with on-device voice typing. It runs entirely locally without sending data to any server. Based on AOSP keyboard with improvements including swipe typing, voice input powered by Whisper, and no network permissions required.

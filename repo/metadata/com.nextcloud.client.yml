@@ -1,0 +1,15 @@
+Categories:
+  - Internet
+License: GPL-2.0-only
+AuthorName: Nextcloud GmbH
+SourceCode: https://github.com/nextcloud/android
+IssueTracker: https://github.com/nextcloud/android/issues
+Changelog: https://github.com/nextcloud/android/releases
+
+AutoName: Nextcloud
+
+RepoType: git
+Repo: https://github.com/nextcloud/android.git
+
+Summary: Sync and share with your own Nextcloud server.
+Description: The Nextcloud Android app allows you to access all your files on your Nextcloud server. Upload, download, sync photos and documents, and share files with others. Integrates with the Android system for auto-upload of photos and offline file access. Works with any Nextcloud server.

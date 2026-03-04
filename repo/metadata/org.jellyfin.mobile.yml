@@ -1,0 +1,15 @@
+Categories:
+  - Multimedia
+License: GPL-2.0-only
+AuthorName: Jellyfin Contributors
+SourceCode: https://github.com/jellyfin/jellyfin-android
+IssueTracker: https://github.com/jellyfin/jellyfin-android/issues
+Changelog: https://github.com/jellyfin/jellyfin-android/releases
+
+AutoName: Jellyfin for Android
+
+RepoType: git
+Repo: https://github.com/jellyfin/jellyfin-android.git
+
+Summary: Official Jellyfin media streaming client.
+Description: Jellyfin for Android is the official client for the Jellyfin media server. Stream your movies, TV shows, music, and photos from your own Jellyfin server. Features video playback with ExoPlayer, server management, and support for multiple users.

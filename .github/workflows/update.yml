@@ -33,6 +33,34 @@ jobs:
           set -e
           declare -a repo_infos=(
             "de.nyxnord.kraftlog;github;LundiNord/KraftLog"
+            "de.mensa_ka.app;github;kronos-et-al/MensaApp"
+            "io.homeassistant.companion.android;github;home-assistant/android"
+            "org.tasks;github;tasks/tasks"
+            "xyz.blueskyweb.app;github;bluesky-social/social-app"
+            "app.comaps;github;comaps/comaps"
+            "at.bitfire.davdroid;github;bitfireAT/davx5-ose"
+            "com.looker.droidify;github;Droid-ify/client"
+            "im.vector.app;github;element-hq/element-android"
+            "com.jmshrv.finamp;github;jmshrv/finamp"
+            "org.futo.inputmethod.latin;github;futo-org/android-keyboard"
+            "nodomain.freeyourgadget.gadgetbridge;github;Freeyourgadget/Gadgetbridge"
+            "org.jellyfin.mobile;github;jellyfin/jellyfin-android"
+            "keepass2android.keepass2android;github;PhilippC/keepass2android"
+            "app.nagram;github;nicegram/Nagram"
+            "org.schabi.newpipe;github;TeamNewPipe/NewPipe"
+            "com.nextcloud.client;github;nextcloud/android"
+            "dev.imranr.obtainium;github;ImranR98/Obtainium"
+            "ch.protonmail.android;github;ProtonMail/proton-mail-android"
+            "ch.protonvpn.android;github;ProtonVPN/android-app"
+            "proton.android.pass;github;protonpass/android-pass"
+            "me.proton.android.drive;github;ProtonMail/proton-drive-android"
+            "me.proton.android.calendar;github;ProtonMail/proton-calendar-android"
+            "com.lgallardo.qbittorrentclient;github;lgallardo/qbittorrent-client"
+            "com.celzero.bravedns;github;celzero/rethink-app"
+            "org.thoughtcrime.securesms;github;signalapp/Signal-Android"
+            "net.thunderbird.android;github;thunderbird/thunderbird-android"
+            "com.aurora.store;gitlab;AuroraOSS/AuroraStore"
+            "us.spotco.fennec_dos;gitlab;divested-mobile/mull-fenix"
           )
 
           force_update="${{ inputs.force_update }}"
@@ -64,6 +92,13 @@ jobs:
                     https://api.github.com/repos/$repo/releases/latest
                 )
                 latest_version=$(echo "$latest_release_data" | jq -r '.name')
+              elif [[ "$provider" == "gitlab" ]]; then
+                encoded_repo="${repo//\//%2F}"
+                latest_release_data=$(
+                  curl -L \
+                    "https://gitlab.com/api/v4/projects/$encoded_repo/releases?per_page=1"
+                )
+                latest_version=$(echo "$latest_release_data" | jq -r '.[0].tag_name')
               else
                 echo "Unknown provider"
                 exit 1
@@ -104,7 +139,7 @@ jobs:
                 https://api.github.com/repos/$repo/releases?per_page=3 \
                 | jq -r '.[].assets[].browser_download_url' \
                 | while read -r url; do wget -P apks --no-verbose $url; done
-              
+
               latest_release_data=$(
                 curl -L \
                   -H "Accept: application/vnd.github+json" \
@@ -113,6 +148,18 @@ jobs:
                   https://api.github.com/repos/$repo/releases/latest
               )
               latest_version=$(echo "$latest_release_data" | jq -r '.name')
+            elif [[ "$provider" == "gitlab" ]]; then
+              encoded_repo="${repo//\//%2F}"
+              curl -L \
+                "https://gitlab.com/api/v4/projects/$encoded_repo/releases?per_page=3" \
+                | jq -r '.[].assets.links[].url' \
+                | while read -r url; do wget -P apks --no-verbose "$url"; done
+
+              latest_release_data=$(
+                curl -L \
+                  "https://gitlab.com/api/v4/projects/$encoded_repo/releases?per_page=1"
+              )
+              latest_version=$(echo "$latest_release_data" | jq -r '.[0].tag_name')
             else
               echo "Unknown provider"
               exit 1

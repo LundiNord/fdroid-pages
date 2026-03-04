@@ -1,0 +1,15 @@
+Categories:
+  - Internet
+License: Apache-2.0
+AuthorName: lgallardo
+SourceCode: https://github.com/lgallardo/qbittorrent-client
+IssueTracker: https://github.com/lgallardo/qbittorrent-client/issues
+Changelog: https://github.com/lgallardo/qbittorrent-client/releases
+
+AutoName: qBittorrent Client
+
+RepoType: git
+Repo: https://github.com/lgallardo/qbittorrent-client.git
+
+Summary: Remote control client for qBittorrent on Android.
+Description: qBittorrent Client is an open-source Android app that lets you remotely manage your qBittorrent torrent client. Add, remove, pause, and resume torrents, monitor download progress, and manage your torrent queue from your Android device. Connects to your qBittorrent Web UI over your local network or VPN.

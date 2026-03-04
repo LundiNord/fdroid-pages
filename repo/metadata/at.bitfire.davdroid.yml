@@ -1,0 +1,16 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: bitfire web engineering
+AuthorEmail: play@bitfire.at
+SourceCode: https://github.com/bitfireAT/davx5-ose
+IssueTracker: https://github.com/bitfireAT/davx5-ose/issues
+Changelog: https://github.com/bitfireAT/davx5-ose/releases
+
+AutoName: DAVx⁵
+
+RepoType: git
+Repo: https://github.com/bitfireAT/davx5-ose.git
+
+Summary: CalDAV/CardDAV sync adapter and client for Android.
+Description: DAVx⁵ is an open-source CalDAV/CardDAV client and sync adapter for Android. Sync your calendars and contacts with Nextcloud, ownCloud, Fastmail, Mailbox.org, and any other DAV-compatible server. Supports two-way sync, OAuth 2.0, and client certificates.

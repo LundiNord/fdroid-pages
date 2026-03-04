@@ -1,0 +1,15 @@
+Categories:
+  - Multimedia
+License: GPL-3.0-only
+AuthorName: NewPipe Team
+SourceCode: https://github.com/TeamNewPipe/NewPipe
+IssueTracker: https://github.com/TeamNewPipe/NewPipe/issues
+Changelog: https://github.com/TeamNewPipe/NewPipe/releases
+
+AutoName: NewPipe
+
+RepoType: git
+Repo: https://github.com/TeamNewPipe/NewPipe.git
+
+Summary: Lightweight, privacy-friendly YouTube frontend.
+Description: NewPipe is a free and open-source frontend for YouTube and other video platforms that does not use any Google APIs. Watch videos, listen to audio-only streams, download content, subscribe to channels, and manage playlists — all without a Google account or ads.

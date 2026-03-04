@@ -1,0 +1,15 @@
+Categories:
+  - Security
+License: GPL-3.0-only
+AuthorName: Proton AG
+SourceCode: https://github.com/protonpass/android-pass
+IssueTracker: https://github.com/protonpass/android-pass/issues
+Changelog: https://github.com/protonpass/android-pass/releases
+
+AutoName: Proton Pass
+
+RepoType: git
+Repo: https://github.com/protonpass/android-pass.git
+
+Summary: End-to-end encrypted password manager by Proton.
+Description: Proton Pass is a free and open-source password manager from Proton. Store passwords, credit cards, identities, and notes with end-to-end encryption. Includes a built-in email alias service (SimpleLogin integration), autofill, 2FA TOTP support, and sharing capabilities.

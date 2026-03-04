@@ -1,0 +1,15 @@
+Categories:
+  - Internet
+License: MPL-2.0
+AuthorName: fiorenmma
+SourceCode: https://gitlab.com/divested-mobile/mull-fenix
+IssueTracker: https://gitlab.com/divested-mobile/mull-fenix/-/issues
+Changelog: https://gitlab.com/divested-mobile/mull-fenix/-/releases
+
+AutoName: Mull
+
+RepoType: git
+Repo: https://gitlab.com/divested-mobile/mull-fenix.git
+
+Summary: Privacy-hardened Firefox-based browser.
+Description: Mull is a privacy-focused and deblobbed Firefox-based browser maintained by fiorenmma. It removes proprietary blobs from Firefox for Android and applies hardened privacy settings by default. Based on Mozilla's Fenix codebase with support for Firefox extensions. Part of the DivestOS project.

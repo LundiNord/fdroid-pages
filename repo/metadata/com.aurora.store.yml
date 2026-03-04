@@ -1,0 +1,15 @@
+Categories:
+  - System
+License: GPL-3.0-only
+AuthorName: Aurora OSS
+SourceCode: https://gitlab.com/AuroraOSS/AuroraStore
+IssueTracker: https://gitlab.com/AuroraOSS/AuroraStore/issues
+Changelog: https://gitlab.com/AuroraOSS/AuroraStore/-/releases
+
+AutoName: Aurora Store
+
+RepoType: git
+Repo: https://gitlab.com/AuroraOSS/AuroraStore.git
+
+Summary: Open-source alternative to the Google Play Store.
+Description: Aurora Store is an unofficial, FOSS client to Google's Play Store with an elegant design. It lets you download, update, and search for apps without a Google account. Supports anonymous sessions, account login, and spoofing device properties.

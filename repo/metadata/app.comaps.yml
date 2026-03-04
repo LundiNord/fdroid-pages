@@ -1,0 +1,14 @@
+Categories:
+  - Navigation
+License: Apache-2.0
+SourceCode: https://github.com/comaps/comaps
+IssueTracker: https://github.com/comaps/comaps/issues
+Changelog: https://github.com/comaps/comaps/releases
+
+AutoName: CoMaps
+
+RepoType: git
+Repo: https://github.com/comaps/comaps.git
+
+Summary: Community-driven privacy-focused offline maps.
+Description: CoMaps is a community fork of Organic Maps, a fast and detailed offline maps app based on OpenStreetMap. Navigate without internet, plan hiking and cycling routes, find points of interest, and explore the world without tracking or ads.

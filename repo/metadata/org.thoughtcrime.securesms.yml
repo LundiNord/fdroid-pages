@@ -1,0 +1,16 @@
+Categories:
+  - Internet
+  - Phone & SMS
+License: GPL-3.0-only
+AuthorName: Signal Foundation
+SourceCode: https://github.com/signalapp/Signal-Android
+IssueTracker: https://github.com/signalapp/Signal-Android/issues
+Changelog: https://github.com/signalapp/Signal-Android/releases
+
+AutoName: Signal
+
+RepoType: git
+Repo: https://github.com/signalapp/Signal-Android.git
+
+Summary: Private end-to-end encrypted messenger.
+Description: Signal is a free, open-source messaging app for private communication with friends. It uses end-to-end encryption to keep your conversations secure. Send messages, voice notes, photos, videos, GIFs, and files, as well as make voice and video calls. Designed to never collect or store any sensitive information.

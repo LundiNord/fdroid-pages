@@ -1,0 +1,15 @@
+Categories:
+  - Sports & Health
+License: AGPL-3.0-or-later
+AuthorName: Freeyourgadget
+SourceCode: https://github.com/Freeyourgadget/Gadgetbridge
+IssueTracker: https://github.com/Freeyourgadget/Gadgetbridge/issues
+Changelog: https://github.com/Freeyourgadget/Gadgetbridge/releases
+
+AutoName: Gadgetbridge
+
+RepoType: git
+Repo: https://github.com/Freeyourgadget/Gadgetbridge.git
+
+Summary: Control your wearables without proprietary apps.
+Description: Gadgetbridge is a free and open-source Android application that allows you to use pebble- and Mi Band-compatible devices without any proprietary apps or servers. Supports fitness trackers, smartwatches, and other Bluetooth gadgets from many manufacturers. Track health data locally on your device.

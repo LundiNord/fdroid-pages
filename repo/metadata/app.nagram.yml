@@ -1,0 +1,14 @@
+Categories:
+  - Internet
+License: GPL-2.0-only
+SourceCode: https://github.com/nicegram/Nagram
+IssueTracker: https://github.com/nicegram/Nagram/issues
+Changelog: https://github.com/nicegram/Nagram/releases
+
+AutoName: Nagram
+
+RepoType: git
+Repo: https://github.com/nicegram/Nagram.git
+
+Summary: Feature-rich third-party Telegram client.
+Description: Nagram is an open-source, third-party Telegram client based on the official Telegram source code. It adds extra features and customization options beyond what the official client provides, including enhanced privacy settings, additional themes, and quality-of-life improvements while maintaining full compatibility with the Telegram network.
