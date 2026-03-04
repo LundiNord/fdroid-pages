@@ -1,0 +1,15 @@
+Categories:
+  - Security
+License: GPL-2.0-only
+AuthorName: Philipp Crocoll
+SourceCode: https://github.com/PhilippC/keepass2android
+IssueTracker: https://github.com/PhilippC/keepass2android/issues
+Changelog: https://github.com/PhilippC/keepass2android/releases
+
+AutoName: KeePass2Android Offline
+
+RepoType: git
+Repo: https://github.com/PhilippC/keepass2android.git
+
+Summary: Offline password manager without internet permission.
+Description: KeePass2Android Offline is a variant of KeePass2Android without internet permission. It is compatible with KeePass (.kdbx) files and manages your passwords entirely locally. Ideal for users who want a fully offline password manager with no network access. Supports fingerprint unlock, QuickUnlock, and the Android autofill framework.

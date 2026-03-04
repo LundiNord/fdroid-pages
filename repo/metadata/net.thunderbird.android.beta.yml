@@ -1,0 +1,15 @@
+Categories:
+  - Internet
+License: MPL-2.0
+AuthorName: Mozilla Thunderbird
+SourceCode: https://github.com/thunderbird/thunderbird-android
+IssueTracker: https://github.com/thunderbird/thunderbird-android/issues
+Changelog: https://github.com/thunderbird/thunderbird-android/releases
+
+AutoName: Thunderbird Beta
+
+RepoType: git
+Repo: https://github.com/thunderbird/thunderbird-android.git
+
+Summary: Beta channel of the Thunderbird email client for Android.
+Description: Thunderbird Beta gives early access to upcoming features and fixes for the Thunderbird email client for Android. Supports IMAP/POP3/SMTP, OpenPGP encryption via OpenKeychain, push notifications, and multiple accounts. Expect occasional instability compared to the stable release.

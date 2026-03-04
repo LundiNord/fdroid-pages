@@ -1,0 +1,15 @@
+Categories:
+  - Multimedia
+License: MPL-2.0
+AuthorName: James Harvey
+SourceCode: https://github.com/jmshrv/finamp
+IssueTracker: https://github.com/jmshrv/finamp/issues
+Changelog: https://github.com/jmshrv/finamp/releases
+
+AutoName: Finamp
+
+RepoType: git
+Repo: https://github.com/jmshrv/finamp.git
+
+Summary: Jellyfin music streaming client for Android.
+Description: Finamp is an open-source Jellyfin music client for Android. Stream or download your music library from your Jellyfin server, create queues, manage playlists, and enjoy your music collection. Features offline playback, background audio, and a clean material interface.

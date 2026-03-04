@@ -41,10 +41,9 @@ jobs:
             "at.bitfire.davdroid;github;bitfireAT/davx5-ose"
             "com.looker.droidify;github;Droid-ify/client"
             "im.vector.app;github;element-hq/element-android"
-            "com.jmshrv.finamp;github;jmshrv/finamp"
+            "com.unicornsonlsd.finamp;github;jmshrv/finamp"
             "org.futo.inputmethod.latin;github;futo-org/android-keyboard"
             "nodomain.freeyourgadget.gadgetbridge;github;Freeyourgadget/Gadgetbridge"
-            "org.jellyfin.mobile;github;jellyfin/jellyfin-android"
             "keepass2android.keepass2android;github;PhilippC/keepass2android"
             "app.nagram;github;nicegram/Nagram"
             "org.schabi.newpipe;github;TeamNewPipe/NewPipe"
@@ -139,6 +138,8 @@ jobs:
                 -H "X-GitHub-Api-Version: 2022-11-28" \
                 https://api.github.com/repos/$repo/releases?per_page=3 \
                 | jq -r '.[].assets[].browser_download_url' \
+                | grep -v '\-debug\.apk' \
+                | grep -v '\-unsigned\.apk' \
                 | while read -r url; do wget -P apks --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
 
               latest_release_data=$(
@@ -154,6 +155,8 @@ jobs:
               curl -L \
                 "https://gitlab.com/api/v4/projects/$encoded_repo/releases?per_page=3" \
                 | jq -r '.[].assets.links[].url' \
+                | grep -v '\-debug\.apk' \
+                | grep -v '\-unsigned\.apk' \
                 | while read -r url; do wget -P apks --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
 
               latest_release_data=$(

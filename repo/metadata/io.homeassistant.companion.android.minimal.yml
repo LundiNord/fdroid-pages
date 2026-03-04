@@ -1,0 +1,17 @@
+Categories:
+  - Internet
+  - Automation
+License: Apache-2.0
+AuthorName: Home Assistant
+AuthorEmail: hello@home-assistant.io
+SourceCode: https://github.com/home-assistant/android
+IssueTracker: https://github.com/home-assistant/android/issues
+Changelog: https://github.com/home-assistant/android/releases
+
+AutoName: Home Assistant (Minimal)
+
+RepoType: git
+Repo: https://github.com/home-assistant/android.git
+
+Summary: Home Assistant companion app — minimal build without location tracking.
+Description: The minimal variant of the Home Assistant Companion App for Android. Identical to the full version but without location tracking and related sensors. Suitable for devices where Google Play Services are unavailable or unwanted. Control your smart home and access dashboards from anywhere.
