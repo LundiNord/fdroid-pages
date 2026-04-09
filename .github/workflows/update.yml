@@ -33,6 +33,7 @@ jobs:
           set -e
           declare -a repo_infos=(
             "de.nyxnord.kraftlog;github;LundiNord/KraftLog"
+            "de.nyxnord.tagalarm;github;LundiNord/TagAlarm"
           )
 
           force_update="${{ inputs.force_update }}"

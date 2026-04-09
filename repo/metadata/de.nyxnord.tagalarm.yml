@@ -1,0 +1,16 @@
+Categories:
+  - System
+License: LicenseRef-proprietary
+AuthorName: NyxNord
+AuthorEmail: contact@nyxnord.de
+SourceCode: https://github.com/LundiNord/TagAlarm
+IssueTracker: https://github.com/LundiNord/TagAlarm/issues
+Changelog: https://github.com/LundiNord/TagAlarm/releases
+
+AutoName: TagAlarm
+
+RepoType: git
+Repo: https://github.com/LundiNord/TagAlarm.git
+
+Summary: A Bluetooth tag-based alarm app for Android.
+Description: TagAlarm is an Android app that monitors connected Bluetooth Low Energy (BLE) devices and triggers alarms based on proximity or connection status. It runs as a persistent foreground service and starts automatically on device boot.
