@@ -103,6 +103,7 @@ jobs:
             repo=${repo_info_parts[2]}
 
             echo "Downloading APKs for $id"
+            mkdir -p "apks/$id"
 
             latest_version=""
             if [[ "$provider" == "github" ]]; then
@@ -114,7 +115,7 @@ jobs:
                 | jq -r '.[].assets[].browser_download_url' \
                 | grep -v '\-debug\.apk' \
                 | grep -v '\-unsigned\.apk' \
-                | while read -r url; do wget -P apks --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
+                | while read -r url; do wget -P "apks/$id" --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
 
               latest_release_data=$(
                 curl -L \
@@ -131,7 +132,7 @@ jobs:
                 | jq -r '.[].assets.links[].url' \
                 | grep -v '\-debug\.apk' \
                 | grep -v '\-unsigned\.apk' \
-                | while read -r url; do wget -P apks --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
+                | while read -r url; do wget -P "apks/$id" --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
 
               latest_release_data=$(
                 curl -L \
@@ -147,6 +148,21 @@ jobs:
             mkdir -p current-versions
             echo "$latest_version" > current-versions/$id.txt
           done
+
+          echo "Flattening and deduplicating APKs"
+          mkdir -p apks/_all
+          for dir in apks/*/; do
+            [ "$dir" = "apks/_all/" ] && continue
+            for f in "$dir"*.apk; do
+              [ -f "$f" ] || continue
+              base=$(basename "$f")
+              app_id=$(basename "$dir")
+              mv "$f" "apks/_all/${app_id}_${base}"
+            done
+          done
+          rm -rf apks/*/
+          mv apks/_all/* apks/
+          rmdir apks/_all
 
           echo "Deleting non-APK files"
           (cd apks && find . -type f ! -name '*.apk' -delete)
