@@ -160,7 +160,10 @@ jobs:
               mv "$f" "apks/_all/${app_id}_${base}"
             done
           done
-          rm -rf apks/*/
+          for dir in apks/*/; do
+            [ "$dir" = "apks/_all/" ] && continue
+            rm -rf "$dir"
+          done
           mv apks/_all/* apks/
           rmdir apks/_all
 
