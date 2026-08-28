@@ -34,6 +34,7 @@ jobs:
           declare -a repo_infos=(
             "de.nyxnord.kraftlog;github;LundiNord/KraftLog"
             "de.nyxnord.tagalarm;github;LundiNord/TagAlarm"
+            "de.lundinord.wetter;github;LundiNord/Wetter"
           )
 
           force_update="${{ inputs.force_update }}"

@@ -1,0 +1,26 @@
+Categories:
+  - Internet
+  - Navigation
+License: GPL-3.0-only
+AuthorName: NyxNord
+AuthorEmail: contact@nyxnord.de
+SourceCode: https://github.com/LundiNord/Wetter
+IssueTracker: https://github.com/LundiNord/Wetter/issues
+Changelog: https://github.com/LundiNord/Wetter/releases
+
+AutoName: Wetter
+
+RepoType: git
+Repo: https://github.com/LundiNord/Wetter.git
+
+Summary: German weather app with DWD forecasts, radar, warnings and history.
+Description: |-
+    Wetter is an Android weather app for Germany and beyond, built with Jetpack
+    Compose and Material3. It shows forecasts, historical data, weather radar
+    maps (Germany and Karlsruhe) and official DWD warnings.
+
+    Data sources: locations in Germany use Bright Sky (DWD station observations
+    and forecast); everywhere else Open-Meteo. Radar and warning map overlays
+    come from DWD GeoServer, the Karlsruhe screen mirrors the KIT page, and
+    lightning data is the DWD's. Every card states whether a figure is a
+    measurement or model output.
