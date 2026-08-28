@@ -124,7 +124,7 @@ jobs:
                 | jq -r '.[].assets[].browser_download_url' \
                 | grep -v '\-debug\.apk' \
                 | grep -v '\-unsigned\.apk' \
-                | while read -r url; do wget -P "apks/$id" --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
+                | while read -r url; do curl -sL -H "Accept: application/octet-stream" -H "Authorization: Bearer ${repo_token}" -o "apks/$id/$(basename "$url")" "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
 
               latest_release_data=$(
                 curl -L \
@@ -141,7 +141,7 @@ jobs:
                 | jq -r '.[].assets.links[].url' \
                 | grep -v '\-debug\.apk' \
                 | grep -v '\-unsigned\.apk' \
-                | while read -r url; do wget -P "apks/$id" --no-verbose "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
+                | while read -r url; do curl -sL -H "Accept: application/octet-stream" -H "Authorization: Bearer ${repo_token}" -o "apks/$id/$(basename "$url")" "$url" || { echo "Warning: failed to download $url, skipping"; echo "$url" >> /tmp/fdroid_download_errors; }; done
 
               latest_release_data=$(
                 curl -L \
