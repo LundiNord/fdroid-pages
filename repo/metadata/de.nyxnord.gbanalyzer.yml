@@ -1,0 +1,21 @@
+Categories:
+  - Development
+License: LicenseRef-proprietary
+AuthorName: NyxNord
+AuthorEmail: contact@nyxnord.de
+SourceCode: https://github.com/LundiNord/GBAnalyzer
+IssueTracker: https://github.com/LundiNord/GBAnalyzer/issues
+Changelog: https://github.com/LundiNord/GBAnalyzer/releases
+
+AutoName: GB Analyzer
+
+RepoType: git
+Repo: https://github.com/LundiNord/GBAnalyzer.git
+
+Summary: Read-only analyzer for auto-exported Gadgetbridge databases.
+Description: |-
+    GB Analyzer is a read-only Android app that analyzes auto-exported
+    Gadgetbridge databases. It shows daily steps, heart rate and sleep
+    statistics (deep/light/REM) for the devices in the export, built with
+    Jetpack Compose and Material3. The app has zero permissions by design
+    and never writes to the database export.

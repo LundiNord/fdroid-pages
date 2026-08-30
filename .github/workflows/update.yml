@@ -30,12 +30,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WETTER_PAT: ${{ secrets.WETTER_PAT }}
+          GBANALYZER_PAT: ${{ secrets.GBANALYZER_PAT }}
         run: |
           set -e
           declare -a repo_infos=(
             "de.nyxnord.kraftlog;github;LundiNord/KraftLog"
             "de.nyxnord.tagalarm;github;LundiNord/TagAlarm"
             "de.lundinord.wetter;github;LundiNord/Wetter;WETTER_PAT"
+            "de.nyxnord.gbanalyzer;github;LundiNord/GBAnalyzer;GBANALYZER_PAT"
           )
 
           get_repo_token() {
